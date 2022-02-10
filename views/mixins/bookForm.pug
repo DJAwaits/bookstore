@@ -12,7 +12,7 @@ mixin bookForm(book, genre, saveUrl, cancelUrl)
 
             div.form-input
                 label(for='publisher') Publisher
-                select(id='publisher' name='publisher' value= book.publisher)
+                input(id='publisher' name='publisher' value= book.publisher)
 
             div.form-input
                 label(for='genre') Genre
@@ -22,11 +22,11 @@ mixin bookForm(book, genre, saveUrl, cancelUrl)
 
             div.form-input
                 label(for='pageCount') Page Count
-                select(id='pageCount' name='pageCount' value= book.pageCount)
+                input(id='pageCount' name='pageCount' value= book.pageCount)
 
             div.form-input
                 label(for='cover') Cover Image
-                select(id='cover' name='cover' value= book.cover)
+                input(id='cover' name='cover' value= book.cover)
 
             div.form-input
                 label(for='description') Book Description

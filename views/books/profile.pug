@@ -2,7 +2,7 @@ extends ../layout
 
 block content
     h3= book.name
-
+    a(href=`/courses/edit/${course.id}`) Edit Book
     div
         p Author: #{book.author}
         p Publisher: #{book.publisher}
