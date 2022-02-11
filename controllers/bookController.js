@@ -60,3 +60,11 @@ module.exports.updateBook = async function(req, res){
     res.redirect(`/courses/profile/${req.params.id}`);
 };
 //delete
+module.exports.deleteBook = async function(req, res){
+    await Book.destroy({
+        where:{
+            id:req.params.id
+        }
+        });
+    res.redirect('/books');
+};
